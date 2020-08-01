@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  padding: 5px;
+  background-color: #c7cde9;
 }
 
 .App-logo {
@@ -27,6 +29,16 @@
 .App-link {
   color: #61dafb;
 }
+
+.swf{
+  margin: 5px;
+  border: 1px solid black;
+}
+.swfDinoz{
+  margin: 5px;
+  border: 1px solid chocolate;
+}
+
 
 @keyframes App-logo-spin {
   from {
