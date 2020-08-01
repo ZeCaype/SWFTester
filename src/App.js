@@ -41,14 +41,15 @@ function App() {
                 <br></br>
                 Ici, les flashVars nous permettent de choisir l'apparence des Dinoz fusionnés via des codes Hexadécimaux de 20 caractère ou plus:
                 <br></br>
-                <ReactSWF className="swf" src="./swf/fusion.swf" width="400" height="200"
-                          flashVars={"swf_url=/fusion.swf?&infos=FFFFFFzA9F1ILHoCw7S9C:FFFFFFFiBPFlG5f4tZ4:FFFFFFFzB9F1ILfoCZ4" +
-                          "&dinozUrl=/swf/dino.swf"}
-                          infos={"FFFFFFzA9F1ILHoCw7S9C:FFFFFFFiBPFlG5f4tZ4:FFFFFFFzB9F1ILfoCZ4"}
+                <ReactSWF className="swf" src="/swf/loader.swf" width="400" height="200"
+                          flashVars={"swf_url=/swf/fusion.swf?$version=null&lang=en&infos=DzB9F1ILfoCZ42345#:D7y4AcVKwHV3CX4t12345:D7B4FcVKfHVZ4X12345#&dinozUrl=/swf/dino.swf"}
+                          wmode="transparent"
+                          scale="noscale"
                 />
 
                 <ReactSWF className="swf" src="./swf/sacrifice.swf" width="400" height="200"
                           flashVars={"swf_url=/sacrifice.swf&v=35"}
+
                 />
             </div>
 
@@ -67,6 +68,7 @@ function App() {
                           ":40:38:30:30:121:114:244:0:30:99:91:2:0:0:82:84:40:0:9" +
                           ":Bats-toi !:Tu vas connaitre ma puissance !" +
                           ":Ouille ! ouille ouille !:Ce n'est qu'un au revoir...&dino_url=/swf/dino.swf"}
+                          allowScriptAccess="never"
                 />
             </div>
 
