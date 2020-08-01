@@ -42,7 +42,9 @@ function App() {
                 Ici, les flashVars nous permettent de choisir l'apparence des Dinoz fusionnés via des codes Hexadécimaux de 20 caractère ou plus:
                 <br></br>
                 <ReactSWF className="swf" src="./swf/fusion.swf" width="400" height="200"
-                          flashVars={"swf_url=/fusion.swf"}
+                          flashVars={"swf_url=/fusion.swf?&infos=FFFFFFzA9F1ILHoCw7S9C:FFFFFFFiBPFlG5f4tZ4:FFFFFFFzB9F1ILfoCZ4" +
+                          "&dinozUrl=/swf/dino.swf"}
+                          infos={"FFFFFFzA9F1ILHoCw7S9C:FFFFFFFiBPFlG5f4tZ4:FFFFFFFzB9F1ILfoCZ4"}
                 />
 
                 <ReactSWF className="swf" src="./swf/sacrifice.swf" width="400" height="200"
