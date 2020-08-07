@@ -48,3 +48,11 @@
     transform: rotate(360deg);
   }
 }
+
+.hoverable:hover{
+  background-color: aqua;
+  pointer-events:none;
+}
+
+.notClickable{
+}

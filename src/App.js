@@ -27,13 +27,21 @@ function App() {
                 <br></br>
                 Ici, les flashVars nous permettent de choisir l'emplacement pointé par le rond orange :
                 <br></br>
-                <ReactSWF className="swf" src="./swf/map.swf" width="400" height="250"
-                          flashVars={"swf_url=/map.swf&lang=fr&p=17&v=8388607"}
-                />
+                <div className="hoverable">
+                    <ReactSWF className="notClickable" src="./swf/map.swf" width="400" height="250"
+                              flashVars={"swf_url=/map.swf&lang=fr&p=17&v=8388607"}
+                              allowScriptAccess="never"
+                              allowNetworking="never"
 
-                <ReactSWF className="swf" src="./swf/map.swf" width="400" height="250"
+                    />
+                </div>
+
+                <div className="hoverable">
+                <ReactSWF className="notClickable" src="./swf/map.swf" width="400" height="250"
                           flashVars={"swf_url=/map.swf&lang=en&p=0&v=8388607"}
+                          allowScriptAccess="never"
                 />
+                </div>
             </div>
 
             <div>
@@ -58,16 +66,15 @@ function App() {
                 <br></br>
                 Ici, les flashVars nous permettent de choisir l'apparence des Dinoz en combat ainsi que toutes leurs stats (valeurs de leurs éléments):
                 <br></br>
-                Attention!!! Ce SWF force un ''page-refresh'' quand le combat est terminé... Ceci pose problème dans le re-make de Dinoparc...
-                <br></br>
                 <ReactSWF className="swf"
                           src="./swf/fight.swf" width="400" height="250"
                           flashVars={"swf_url=/fight.swf?$version=15&lang=fr" +
                           "&r=5238u2udj2j3udSFSDGSDG#:F2782j8d7832fSGSEDGSG" +
                           ":LeSombre:LeOuistiti" +
-                          ":40:38:30:30:121:114:244:0:30:99:91:2:0:0:82:84:40:0:9" +
-                          ":Bats-toi !:Tu vas connaitre ma puissance !" +
-                          ":Ouille ! ouille ouille !:Ce n'est qu'un au revoir...&dino_url=/swf/dino.swf"}
+                          ":31:32:50:25:0:1:10:1:10:2:3:30:0:12:4:2:5:1:1" +
+                          ":Bats-toi !:Bats-toi !" +
+                          ":Gloups...:Gloups..." +
+                          "&dino_url=/swf/dino.swf"}
                           allowScriptAccess="never"
                 />
             </div>
